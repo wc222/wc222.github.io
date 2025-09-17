@@ -1,0 +1,335 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fafafa;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    min-height: 100vh;
+}
+
+/* Header Styles */
+.header {
+    padding: 40px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile-image {
+    flex-shrink: 0;
+}
+
+.profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #f0f0f0;
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #1a1a1a;
+}
+
+.chinese-name {
+    font-weight: 400;
+    color: #000;
+    font-size: 0.8em;
+}
+
+.title {
+    font-size: 1.2rem;
+    color: #000;
+    margin-bottom: 4px;
+    font-weight: 500;
+}
+
+.affiliation {
+    font-size: 1.1rem;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.email {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.email:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+}
+
+/* Navigation Styles */
+.navigation {
+    padding: 20px 0;
+    border-bottom: 1px solid #e5e5e5;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+}
+
+.navigation ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.navigation a:hover {
+    background-color: #f3f4f6;
+    color: #2563eb;
+}
+
+/* Main Content Styles */
+.main-content {
+    padding: 40px 0;
+}
+
+.section {
+    margin-bottom: 50px;
+}
+
+.section h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+    border-bottom: 2px solid #2563eb;
+    padding-bottom: 8px;
+}
+
+.section p {
+    margin-bottom: 15px;
+    color: #000;
+    line-height: 1.7;
+}
+
+/* Job market highlight */
+.section p.job-market-highlight {
+    color: #FF8C02 !important;
+    font-weight: 500;
+}
+
+/* Research Interests */
+.research-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.research-list li {
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f0f0;
+    color: #000;
+    font-weight: 500;
+}
+
+.research-list li:before {
+    content: "▸";
+    color: #2563eb;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Publications */
+.publication {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border-left: 4px solid #2563eb;
+}
+
+.publication h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #1a1a1a;
+    line-height: 1.4;
+}
+
+.authors {
+    color: #000;
+    margin-bottom: 5px;
+    font-size: 0.95rem;
+}
+
+.venue {
+    color: #2563eb;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+/* Highlight publication achievements */
+.publication-highlight {
+    color: #8B0000;
+    font-weight: 600;
+}
+
+/* Publication links */
+.publication-links {
+    margin-top: 8px;
+}
+
+.publication-links a,
+.venue a {
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.publication-links a:hover,
+.venue a:hover {
+    text-decoration: underline;
+}
+
+
+/* Education */
+.education-item {
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.education-item h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #1a1a1a;
+}
+
+.institution {
+    color: #2563eb;
+    font-weight: normal;
+    margin-bottom: 3px;
+}
+
+.duration {
+    color: #000;
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+
+/* Service */
+.service-section h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+}
+
+/* Contact */
+.contact-details p {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+    padding: 30px 0;
+    border-top: 1px solid #e5e5e5;
+    text-align: center;
+    color: #000;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .profile-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .profile-image img {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .name {
+        font-size: 2rem;
+    }
+    
+    .navigation ul {
+        gap: 15px;
+        justify-content: center;
+    }
+    
+    .navigation a {
+        padding: 6px 10px;
+        font-size: 0.9rem;
+    }
+    
+    .section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .main-content {
+        padding: 30px 0;
+    }
+    
+    .section {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .name {
+        font-size: 1.8rem;
+    }
+    
+    .title {
+        font-size: 1rem;
+    }
+    
+    .navigation ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .publication, .education-item {
+        padding: 15px;
+    }
+}
